@@ -47,6 +47,9 @@ kubectl get po --show-labels
 
 ```bash
 kubectl label po nginx2 app=v2 --overwrite
+  or
+  kubectl get pod nginx2 -o yaml > nginx.yaml
+  vi nginx.yaml # Edit the label and recreate that pod by the command Replace  
 ```
 
 </p>
