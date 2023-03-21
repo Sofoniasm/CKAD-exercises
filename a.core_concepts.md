@@ -321,9 +321,9 @@ kubectl exec -it nginx -- /bin/sh
 <p>
 
 ```bash
-kubectl run busybox --image=busybox -it --restart=Never -- echo 'hello world'
+kubectl run busybox --image=busybox -it --rm --restart=Never -- echo 'hello world'
 # or
-kubectl run busybox --image=busybox -it --restart=Never -- /bin/sh -c 'echo hello world'
+kubectl run busybox --image=busybox -it --rm --restart=Never -- /bin/sh -c 'echo hello world'
 ```
 
 </p>
